@@ -1,0 +1,22 @@
+
+<% include partials/head %>
+<main class="container-fluid">
+    <div class="row">
+      
+      <article class="col-sm-8">
+        <h2><%= post.title %></h2>
+        <h4>Written by <%= post.author %></h4>
+        <div>
+            <%= post.postContent %>
+        </div>
+      </article>
+      
+      <div class="col-sm-3 offset-sm-1">
+        <% include partials/aside %>
+      </div>
+    </div>
+  </main>
+
+
+
+<% include partials/foot %>    
