@@ -7,9 +7,11 @@
         <h2><%= post.title %></h2>
         <h4>Written by <%= post.author %></h4>
         <div>
-            <%= post.postContent %>
+            <%- post.postContent %>
         </div>
+        <button type="delete" class="btn btn-secondary">Delete Post</button>
       </article>
+     
       
       <div class="col-sm-3 offset-sm-1">
         <% include partials/aside %>

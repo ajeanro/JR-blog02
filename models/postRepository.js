@@ -30,6 +30,16 @@ let savePosts = () => {
 
 loadPosts();
 
+/*let deletePosts = () => {
+    fs.unlink(fileName, (err, data) =>{
+        if (err) {
+            console.error("Error deleting the file." + err.message);
+            throw err;
+        } 
+        console.log('the file has been deleted');
+    });
+};*/
+
 let repo = {
     dataSource: "Filesystem",
     postCount: () => {
